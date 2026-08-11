@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img" aria-label="Placeholder voor persoonlijke afbeelding">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="240" cy="240" r="240" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#circle-clip)">
+    <rect width="480" height="480" fill="#eaf0ff" />
+    <circle cx="240" cy="200" r="90" fill="#c3d3ff" />
+    <circle cx="240" cy="520" r="220" fill="#c3d3ff" />
+  </g>
+  <circle cx="240" cy="240" r="238" fill="none" stroke="#2952e3" stroke-width="3" stroke-dasharray="10 8" />
+  <text x="240" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f3ebd">
+    Placeholder — AI-avatar volgt
+  </text>
+</svg>
