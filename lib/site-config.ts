@@ -11,7 +11,7 @@ export const siteConfig = {
   name: "Magick Media",
   legalName: "Magick Media", // TODO: volledige handelsnaam indien anders
   tagline: "Google Ads specialist voor MKB",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://sea.magickmedia.nl",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://googleads.magickmedia.nl",
   locale: "nl_NL",
   contact: {
     email: "info@magickmedia.nl", // TODO: bevestig echte e-mailadres
@@ -32,10 +32,10 @@ export const nav = [
 ];
 
 export const hero = {
-  eyebrow: "Google Ads specialist — geen bureau, geen accountmanager",
-  headline: "Meer kwalitatieve leads via Google Ads",
+  eyebrow: "Google Ads uitbesteden?",
+  headline: "Ontvang meer kwalitatieve leads via Google Ads",
   subheadline:
-    "Ik zet je advertentiebudget om in klanten, met korte lijntjes en rechtstreeks contact. Geen accountmanager, geen wachtrij: je werkt altijd direct met mij.",
+    "Meetbaar meer klanten uit Google Ads. Persoonlijk, transparant en altijd rechtstreeks contact.",
   primaryCta: { label: "Plan een vrijblijvend adviesgesprek", href: "#plan-gesprek" },
   secondaryCta: { label: "Bekijk de prijzen", href: "#prijzen" },
 };
