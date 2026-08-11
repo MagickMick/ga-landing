@@ -12,7 +12,7 @@ export function UspGrid() {
           title="Eén specialist, geen tussenlagen"
           description="Bij een bureau werk je vaak met een accountmanager. Bij mij werk je met de persoon die je campagne ook echt beheert."
         />
-        <div className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {usps.map((usp) => (
             <Card key={usp.title} className="flex flex-col gap-2">
               <h3 className="text-lg font-semibold text-ink">{usp.title}</h3>

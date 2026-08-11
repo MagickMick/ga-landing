@@ -14,10 +14,22 @@
   --color-surface-alt: #f6f8fc;
   --color-border: #e2e8f0;
 
+  /* Main brand/interactive color (links, active states, icons). */
   --color-primary: #2952e3;
   --color-primary-dark: #1f3ebd;
   --color-primary-soft: #eaf0ff;
 
+  /* Magick Media purple — reserved specifically for the highlighted pricing
+     card's border, not used as the general brand color. */
+  --color-pricing-highlight: #6d28d9;
+
+  /* CTA orange — reserved for the primary conversion action (the "Plan een
+     vrijblijvend adviesgesprek" button) so it stands out from the blue used
+     everywhere else. */
+  --color-cta: #ff9600;
+  --color-cta-dark: #cc7a00;
+
+  /* Amber accent — badges/star ratings, kept distinct from the CTA orange. */
   --color-accent: #f59e0b;
   --color-accent-dark: #b45309;
   --color-accent-soft: #fef3c7;
@@ -32,6 +44,9 @@
   --color-primary: var(--color-primary);
   --color-primary-dark: var(--color-primary-dark);
   --color-primary-soft: var(--color-primary-soft);
+  --color-pricing-highlight: var(--color-pricing-highlight);
+  --color-cta: var(--color-cta);
+  --color-cta-dark: var(--color-cta-dark);
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);
   --color-accent-soft: var(--color-accent-soft);

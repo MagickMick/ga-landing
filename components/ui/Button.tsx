@@ -3,8 +3,9 @@ import { AnchorHTMLAttributes } from "react";
 type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary:
-    "bg-primary text-white hover:bg-primary-dark shadow-sm shadow-primary/20",
+  // Reserved for the main conversion action (book-a-call CTA) — orange so it
+  // pops against the purple brand color used everywhere else.
+  primary: "bg-cta text-white hover:bg-cta-dark shadow-sm shadow-cta/20",
   secondary:
     "bg-white text-ink border border-border hover:border-primary hover:text-primary",
   ghost: "text-primary hover:text-primary-dark",

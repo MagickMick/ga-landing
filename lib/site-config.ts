@@ -40,21 +40,7 @@ export const hero = {
   secondaryCta: { label: "Bekijk de prijzen", href: "#prijzen" },
 };
 
-// Defensible today: the 5 published reviews are all 5-star. The other two
-// stats are realistic placeholders — replace with real figures before launch.
-export const trustStats = [
-  { value: "5,0/5", label: "klantbeoordeling" },
-  { value: "100%", label: "rechtstreeks contact, geen accountmanager" },
-  { value: "8+", label: "jaar ervaring" }, // TODO: bevestig echt aantal jaar
-  { value: "50+", label: "klanten geholpen" }, // TODO: bevestig echt aantal klanten
-];
-
 export const usps = [
-  {
-    title: "Rechtstreeks contact met mij",
-    description:
-      "Geen accountmanager of tussenpersoon: je schakelt altijd direct met de specialist die je campagnes ook echt beheert.",
-  },
   {
     title: "Snel resultaat",
     description:
@@ -66,9 +52,9 @@ export const usps = [
       "Je ziet precies waar je budget naartoe gaat en wat het oplevert. Geen vage dashboards, gewoon heldere taal.",
   },
   {
-    title: "Eerlijke, vaste prijzen",
+    title: "Betaal nooit teveel",
     description:
-      "Geen verrassingen achteraf: je weet vooraf exact wat je betaalt, elke maand.",
+      "Ik streef naar de beste balans tussen kwaliteit en prijs, met volledige transparantie. Zo draagt elke investering echt bij aan de groei van je bedrijf.",
   },
 ];
 
@@ -77,7 +63,7 @@ export const pricing = {
     "Duidelijke prijzen, geen kleine lettertjes. Dit is precies wat je betaalt.",
   monthly: {
     price: "€249",
-    period: "per maand",
+    period: "per maand, per campagne",
     title: "Google Ads beheer",
     description:
       "All-in beheer en optimalisatie van je Google Ads campagne — inclusief hosting en onderhoud van je landingspagina. Geen aparte kostenpost.",
@@ -88,19 +74,16 @@ export const pricing = {
       "Rechtstreeks contact met mij, geen accountmanager",
     ],
   },
-  setup: {
+  // Rendered as a compact banner underneath the pricing card, not as a
+  // competing card — this is an optional, one-time cost (only relevant if
+  // you need a new landing page built), unlike the fixed monthly price above.
+  setupBanner: {
+    badge: "Nu 50% korting",
+    heading: "50% korting op de landingspagina-opzet",
     price: "€250",
     originalPrice: "€500",
-    period: "eenmalig",
-    badge: "50% korting voor nieuwe klanten",
-    title: "Landingspagina-opzet",
     description:
-      "Een landingspagina die is gemaakt om bezoekers om te zetten in leads, speciaal afgestemd op je campagne.",
-    features: [
-      "Op maat gemaakte, conversiegerichte landingspagina",
-      "Nu 50% korting: €250 in plaats van €500",
-      "Eenmalige kosten, geen abonnement",
-    ],
+      "Eenmalige, optionele kosten voor een nieuwe, conversiegerichte landingspagina bij je campagne.",
   },
   disclaimer:
     "Prijzen zijn exclusief btw. Advertentiebudget aan Google zelf is hier niet in inbegrepen en betaal je rechtstreeks aan Google.", // TODO: bevestig excl./incl. btw
