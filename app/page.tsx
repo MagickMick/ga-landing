@@ -1,8 +1,7 @@
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
-import { UspGrid } from "@/components/sections/UspGrid";
+import { WhyMe } from "@/components/sections/WhyMe";
 import { Pricing } from "@/components/sections/Pricing";
-import { PersonalIntro } from "@/components/sections/PersonalIntro";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Faq } from "@/components/sections/Faq";
@@ -15,9 +14,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <UspGrid />
+        <WhyMe />
         <Pricing />
-        <PersonalIntro />
         <ProcessTimeline />
         <Testimonials />
         <Faq />

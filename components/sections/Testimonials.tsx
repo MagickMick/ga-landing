@@ -14,7 +14,7 @@ function Stars({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <section id="reviews" className="py-20 sm:py-24">
+    <section id="reviews" className="bg-surface-alt py-20 sm:py-24">
       <Container className="flex flex-col items-center gap-12">
         <SectionHeading eyebrow="Reviews" title="Wat klanten zeggen" />
 

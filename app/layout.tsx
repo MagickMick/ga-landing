@@ -4,7 +4,7 @@ import "./globals.css";
 import { ConsentDefaultScript } from "@/components/consent/ConsentDefaultScript";
 import { GtmLoader } from "@/components/consent/GtmLoader";
 import { CookieBanner } from "@/components/consent/CookieBanner";
-import { siteConfig } from "@/lib/site-config";
+import { pricing, siteConfig } from "@/lib/site-config";
 import { buildProfessionalServiceJsonLd } from "@/lib/structured-data";
 
 const geistSans = Geist({
@@ -20,8 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: "Meer kwalitatieve leads via Google Ads | Magick Media",
-  description:
-    "Google Ads beheer met rechtstreeks contact — geen accountmanager. Duidelijke prijzen vanaf €249 per maand. Plan een vrijblijvend adviesgesprek.",
+  description: `Google Ads beheer met rechtstreeks contact — geen accountmanager. Duidelijke prijzen vanaf ${pricing.monthly.price} per maand. Plan een vrijblijvend adviesgesprek.`,
   openGraph: {
     title: "Meer kwalitatieve leads via Google Ads",
     description:

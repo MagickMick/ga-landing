@@ -4,12 +4,12 @@ import { processSteps } from "@/lib/site-config";
 
 export function ProcessTimeline() {
   return (
-    <section id="werkwijze" className="bg-surface-alt py-20 sm:py-24">
+    <section id="werkwijze" className="py-20 sm:py-24">
       <Container className="flex flex-col items-center gap-12">
         <SectionHeading
           eyebrow="Werkwijze"
           title="Zo werken we samen"
-          description="Van kennismaking tot doorlopende optimalisatie — met concrete tijdlijnen, geen verrassingen."
+          description="Van kennismaking tot doorlopende optimalisatie."
         />
 
         <ol className="relative flex w-full max-w-3xl flex-col gap-8 border-l border-border pl-8">

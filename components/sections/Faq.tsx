@@ -5,7 +5,7 @@ import { buildFaqJsonLd } from "@/lib/structured-data";
 
 export function Faq() {
   return (
-    <section id="faq" className="bg-surface-alt py-20 sm:py-24">
+    <section id="faq" className="py-20 sm:py-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqJsonLd()) }}
