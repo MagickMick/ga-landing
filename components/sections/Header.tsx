@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { nav, siteConfig, hero } from "@/lib/site-config";
@@ -11,7 +12,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-surface/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        <a href="#top" className="text-lg font-bold tracking-tight text-ink">
+        <a href="#top" className="flex items-center gap-2 text-lg font-bold tracking-tight text-ink">
+          <Image
+            src="/images/favicon.png"
+            alt=""
+            width={28}
+            height={28}
+            className="h-7 w-7"
+            aria-hidden
+          />
           {siteConfig.name}
         </a>
 

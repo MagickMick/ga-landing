@@ -23,15 +23,11 @@ export function Hero() {
           </h1>
         </div>
         <p className="max-w-2xl text-lg text-muted sm:text-xl">
-          {hero.subheadline.line1}
-          <br />
-          <span className="whitespace-nowrap">
-            {hero.subheadline.before}
-            <span className="font-semibold text-magic">
-              {hero.subheadline.highlight}
-            </span>
-            {hero.subheadline.after}
+          {hero.subheadline.before}
+          <span className="font-semibold text-magic">
+            {hero.subheadline.highlight}
           </span>
+          {hero.subheadline.after}
         </p>
         <div className="mt-2 flex flex-col gap-3 sm:flex-row">
           <Button href={hero.primaryCta.href}>{hero.primaryCta.label}</Button>

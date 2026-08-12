@@ -23,7 +23,7 @@ export default function PrivacyPage() {
       <main className="py-16 sm:py-20">
         <Container className="prose prose-slate max-w-3xl">
           <h1>Privacy- en cookiebeleid</h1>
-          <p className="text-sm !text-muted">Laatst bijgewerkt: TODO datum invullen</p>
+          <p className="text-sm !text-muted">Laatst bijgewerkt: 12-8-2026</p>
 
           <h2>Wie we zijn</h2>
           <p>

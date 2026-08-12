@@ -15,12 +15,13 @@ export const siteConfig = {
   locale: "nl_NL",
   contact: {
     email: "info@magickmedia.nl", // TODO: bevestig echte e-mailadres
-    phone: "", // TODO: telefoonnummer (leeg = niet tonen)
-    kvk: "", // TODO: KVK-nummer
+    whatsapp: "31642667970", // nummer zonder + of spaties
+    kvk: "84696109",
     btw: "", // TODO: BTW-nummer
   },
   calendlyUrl:
-    process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/TODO-vul-in",
+    process.env.NEXT_PUBLIC_CALENDLY_URL ||
+    "https://calendly.com/magick-media/30min?hide_event_type_details=1&hide_gdpr_banner=1",
   gtmId: process.env.NEXT_PUBLIC_GTM_ID || "",
 };
 
@@ -42,8 +43,7 @@ export const hero = {
   },
   // Same pattern — "magisch" styled in purple, echoing the Magick Media name.
   subheadline: {
-    line1: "Meetbaar meer klanten uit Google Ads.",
-    before: "Persoonlijk, transparant en een beetje ",
+    before: "Persoonlijk, meetbaar en met een vleugje ",
     highlight: "magie",
     after: ".",
   },
@@ -165,7 +165,7 @@ export const testimonials = [
     company: "Sol Stijlvol Hekwerk",
     rating: 5,
     quote:
-      "Erg prettig samenwerken met Mick van Magick Media. Veel persoonlijk contact en schakelt snel. Zeker een aanrader!",
+      "Prettig samenwerken met Mick van Magick Media. Veel persoonlijk contact en schakelt snel. Zeker een aanrader!",
   },
   {
     name: "Marco",
