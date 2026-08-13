@@ -1,8 +1,15 @@
 Options -Indexes
 DirectoryIndex index.html
 
-# Clean URLs: /privacy → /privacy.html (Next.js static export)
 RewriteEngine On
+RewriteBase /
+
+# Serve directory index.html for clean URLs (e.g. /privacy → /privacy/index.html)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.+?)/?$ $1/index.html [L]
+
+# Serve .html file if no extension given (e.g. /privacy → /privacy.html)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
