@@ -24,10 +24,13 @@ export function Hero() {
         </div>
         <p className="max-w-2xl text-lg text-muted sm:text-xl">
           {hero.subheadline.before}
-          <span className="font-semibold text-magic">
-            {hero.subheadline.highlight}
+          <span className="whitespace-nowrap">
+            {hero.subheadline.noWrapPrefix}
+            <span className="font-semibold text-magic">
+              {hero.subheadline.highlight}
+            </span>
+            {hero.subheadline.after}
           </span>
-          {hero.subheadline.after}
         </p>
         <div className="mt-2 flex flex-col gap-3 sm:flex-row">
           <Button href={hero.primaryCta.href}>{hero.primaryCta.label}</Button>

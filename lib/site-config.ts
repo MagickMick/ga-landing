@@ -43,7 +43,8 @@ export const hero = {
   },
   // Same pattern — "magisch" styled in purple, echoing the Magick Media name.
   subheadline: {
-    before: "Persoonlijk, meetbaar en met een vleugje ",
+    before: "Persoonlijk, meetbaar en een ",
+    noWrapPrefix: "vleugje ",
     highlight: "magie",
     after: ".",
   },
@@ -58,6 +59,11 @@ export const hero = {
 };
 
 export const usps = [
+  {
+    title: "Korte lijnen, één aanspreekpunt",
+    description:
+      "Persoonlijk contact en korte lijnen zijn vaak essentieel voor een succesvolle samenwerking. Daarom blijf ik altijd het directe aanspreekpunt voor je campagnes, zodat we snel kunnen schakelen.",
+  },
   {
     title: "Snel resultaat",
     description:
@@ -80,15 +86,16 @@ export const pricing = {
     "Geen verborgen kosten. Jij weet elke maand precies wat je betaalt.",
   monthly: {
     price: "€299",
-    period: "per maand, per campagne",
+    period: "per maand",
     title: "Google Ads beheer",
     description:
-      "Van campagneopzet tot maandelijkse rapportage. Volledige ontzorging van A tot Z.",
+      "Van campagneopzet tot optimalisatie. Volledige ontzorging van A tot Z.",
     features: [
       "Doorlopende optimalisatie van biedingen, zoekwoorden en advertenties",
       "Hosting & onderhoud van je landingspagina inbegrepen",
       "Maandelijkse rapportage in heldere taal",
       "Rechtstreeks contact met mij",
+      "Prijs per campagne, meerdere campagnes bespreekbaar",
     ],
   },
   disclaimer:
@@ -230,6 +237,11 @@ export const faq = [
     answer:
       "Vooral aan het begin: voor de kennismaking en om je doelen en doelgroep scherp te krijgen. Daarna neem ik het beheer volledig uit handen. Je hoeft alleen de maandelijkse rapportage door te nemen.",
   },
+  {
+    question: "Hoe groot mag mijn campagne zijn?",
+    answer:
+      "Het maandbedrag is gebaseerd op een overzichtelijke campagnestructuur. In de praktijk werkt dat het best met maximaal 4 advertentiegroepen per campagne. Heb je een grotere of complexere structuur nodig? Dat is bespreekbaar, dan kijken we samen naar wat passend is.",
+  },
 ];
 
 export const finalCta = {
@@ -242,7 +254,7 @@ export const finalCta = {
   },
   heading: "Plan een vrijblijvend adviesgesprek in",
   subheading:
-    "Geen verkooppraatje, gewoon een eerlijk gesprek over je doelen en of Google Ads daarbij past. Kies zelf een moment dat jou uitkomt.",
+    "Geen verkooppraatje, gewoon een eerlijk gesprek over je doelen en of Google Ads daarbij past. Geheel vrijblijvend, je zit dus nergens aan vast. Kies zelf een moment dat jou uitkomt.",
 };
 
 export const footerLinks = {

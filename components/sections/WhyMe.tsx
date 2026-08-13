@@ -33,9 +33,8 @@ export function WhyMe() {
         <div className="order-1 flex flex-col gap-8 pb-20 sm:pb-24 md:order-2">
           <SectionHeading
             align="left"
-            eyebrow="Waarom Magick Media"
-            title="Korte lijnen, één aanspreekpunt"
-            description="Persoonlijk contact en korte lijnen zijn vaak essentieel voor een succesvolle samenwerking. Daarom blijf ik altijd het directe aanspreekpunt voor je campagnes, zodat we snel kunnen schakelen."
+            eyebrow="Waarom klanten kiezen voor ons"
+            title="Persoonlijk, betaalbaar en transparant."
           />
 
           <ul className="flex flex-col gap-5">

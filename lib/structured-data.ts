@@ -10,7 +10,7 @@ export function buildProfessionalServiceJsonLd() {
     url: siteConfig.url,
     areaServed: "NL",
     ...(siteConfig.contact.email && { email: siteConfig.contact.email }),
-    ...(siteConfig.contact.phone && { telephone: siteConfig.contact.phone }),
+    ...(siteConfig.contact.whatsapp && { telephone: siteConfig.contact.whatsapp }),
   };
 }
 

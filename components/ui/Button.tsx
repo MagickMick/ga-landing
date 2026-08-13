@@ -27,6 +27,7 @@ export function Button({
       {...props}
     >
       {children}
+      <span aria-hidden>→</span>
     </a>
   );
 }
