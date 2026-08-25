@@ -33,7 +33,7 @@ export function WhyMe() {
         <div className="order-1 flex flex-col gap-8 pb-20 sm:pb-24 md:order-2">
           <SectionHeading
             align="left"
-            eyebrow="Waarom klanten kiezen voor ons"
+            eyebrow="Waarom klanten voor ons kiezen"
             title="Persoonlijk, betaalbaar en transparant."
           />
 

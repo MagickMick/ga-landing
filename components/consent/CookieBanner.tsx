@@ -18,6 +18,14 @@ function pushConsentFromCookie(cookie: CookieConsent.CookieValue) {
   });
 }
 
+function pushPageView() {
+  if (typeof window === "undefined") return;
+  const dl = (window as Window & { dataLayer?: unknown[] }).dataLayer;
+  if (!dl) return;
+  // Re-send page_view after consent so GTM's GA4 tag fires with cookies enabled.
+  dl.push({ event: "page_view", page_location: window.location.href, page_title: document.title });
+}
+
 export function CookieBanner() {
   useEffect(() => {
     CookieConsent.run({
@@ -48,7 +56,7 @@ export function CookieBanner() {
         marketing: {},
       },
       onFirstConsent: ({ cookie }) => pushConsentFromCookie(cookie),
-      onConsent: ({ cookie }) => pushConsentFromCookie(cookie),
+      onConsent: ({ cookie }) => { pushConsentFromCookie(cookie); pushPageView(); },
       onChange: ({ cookie }) => pushConsentFromCookie(cookie),
       language: {
         default: "nl",
