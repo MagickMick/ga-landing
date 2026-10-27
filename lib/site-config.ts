@@ -33,7 +33,7 @@ export const nav = [
 ];
 
 export const hero = {
-  eyebrow: "Betaalbare Google Ads voor het MKB",
+  eyebrow: "Google Ads & SEA specialist voor het MKB",
   // {before/highlight/after} so "kwalitatieve leads" can be styled in
   // purple (--color-magic) without hardcoding the sentence in the component.
   headline: {
@@ -43,7 +43,8 @@ export const hero = {
   },
   // Same pattern — "magisch" styled in purple, echoing the Magick Media name.
   subheadline: {
-    before: "Persoonlijk, meetbaar en een ",
+    before:
+      "Besteed je Google Ads uit aan een persoonlijke SEA specialist. Meetbaar en met een ",
     noWrapPrefix: "vleugje ",
     highlight: "magie",
     after: ".",
