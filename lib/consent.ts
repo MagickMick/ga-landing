@@ -23,11 +23,15 @@ export type ConsentModeSignals = {
 // `Window.dataLayer`, and TS requires merged declarations to match exactly.
 type WindowWithDataLayer = Window & { dataLayer?: unknown[] };
 
-function pushToDataLayer(...args: unknown[]) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function pushToDataLayer(..._args: unknown[]) {
   if (typeof window === "undefined") return;
   const w = window as WindowWithDataLayer;
   w.dataLayer = w.dataLayer || [];
-  w.dataLayer.push(args);
+  // gtag commands must be pushed as an `arguments` object, not an array —
+  // GTM silently ignores a plain array, so the consent update never lands.
+  // eslint-disable-next-line prefer-rest-params
+  w.dataLayer.push(arguments);
 }
 
 /**
@@ -41,7 +45,7 @@ export function setConsentDefaults() {
     ad_storage: "denied",
     ad_user_data: "denied",
     ad_personalization: "denied",
-    analytics_storage: "granted",
+    analytics_storage: "denied",
     wait_for_update: 500,
   });
 }

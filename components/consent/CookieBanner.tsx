@@ -55,6 +55,9 @@ export function CookieBanner() {
         },
         marketing: {},
       },
+      // GTM's GA4 tag fires only on this page_view push (not on All Pages), so
+      // it must run on every onConsent — the first choice *and* every later
+      // pageview of a visitor who already consented.
       onFirstConsent: ({ cookie }) => pushConsentFromCookie(cookie),
       onConsent: ({ cookie }) => { pushConsentFromCookie(cookie); pushPageView(); },
       onChange: ({ cookie }) => pushConsentFromCookie(cookie),
